@@ -15,3 +15,9 @@
     width: 30%;
     max-width: 30%;
 }
+.cabecalho > nav{
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    height: 100%;
+}
