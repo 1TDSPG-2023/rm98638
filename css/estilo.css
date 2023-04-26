@@ -15,3 +15,31 @@ html{
     font-size: 4rem;
     text-align: center;
 }
+.dados{
+    margin: 5% auto;
+}
+table{
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+td,th{
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(odd){
+    background-color: #ddd;
+}
+td:nth-child(even), th:nth-child(even){
+    background-color: #d6eeee;
+}
+tr:hover{
+    background-color: #d6eeee;
+}
+
+td[rowspan]{
+    text-align: center;
+}
+th{
+    text-align: center;
+}
