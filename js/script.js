@@ -19,7 +19,7 @@ button?.addEventListener('click', function () {
 const h2 = document.querySelector('.tit-sec')
 let tamanho = 40
 h2.addEventListener('click', function () {
-    tamanho -= 2
+    tamanho -= 10
     this.style.fontSize = tamanho + 'px'
     console.log(tamanho)
 })
