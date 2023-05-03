@@ -7,6 +7,18 @@
         <link rel="stylesheet" href="./css/estilo.css" />
         <title>Exercício</title>
     </head>
+    <script>
+        'use strict';
+
+        var nome1 = 'Yago';
+
+        if (nome1 != '') {
+            let nome1 = 'Renata';
+            console.log(nome1);
+        }
+
+        console.log(nome1);
+    </script>
     <body>
         <header class="cabecalho">
             <img src="./img/logo.png" alt="Logo" />
@@ -16,5 +28,76 @@
                 <a href="#">Item 1</a>
             </nav>
         </header>
+        <h2 class="tit-sec">Sessão de Fotos</h2>
+        <section class="conteudo">
+            <div>
+                <img src="./img/lobo1.jpg" alt="Lobo 1" />
+                <p>Legenda 1</p>
+            </div>
+            <div>
+                <img src="./img/lobo2.jpg" alt="Lobo 2" />
+                <p>Legenda 2</p>
+            </div>
+            <div>
+                <img src="./img/lobo3.jpg" alt="Lobo 3" />
+                <p>Legenda 3</p>
+            </div>
+            <div>
+                <img src="./img/lobo4.jpg" alt="Lobo 4" />
+                <p>Legenda 4</p>
+            </div>
+            <div>
+                <img src="./img/lobo5.jpg" alt="Lobo 5" />
+                <p>Legenda 5</p>
+            </div>
+            <div>
+                <img src="./img/lobo6.jpg" alt="Lobo 6" />
+                <p>Legenda 6</p>
+            </div>
+        </section>
+        <footer class="rodape">
+            <h2>fale conosco</h2>
+            <form action="./info.html" method="get" onsubmit="return false">
+                <fieldset>
+                    <legend>Login</legend>
+                    <div>
+                        <label for="idUser">Usuário</label>
+                        <input
+                            type="text"
+                            name="txtUser"
+                            id="idUser"
+                            placeholder="Usuário"
+                        />
+                    </div>
+                    <div>
+                        <label for="idPass">Senha</label>
+                        <input
+                            type="password"
+                            name="txtPass"
+                            id="idPass"
+                            placeholder="Senha"
+                        />
+                    </div>
+                    <div>
+                        <label for="idGravaDados">Gravar Dados</label>
+                        <input
+                            type="checkbox"
+                            name="chkDta"
+                            id="idGravaDados"
+                            value="ok"
+                            placeholder="Usuário"
+                        />
+                    </div>
+                    <div>
+                        <button type="submit" value="Login"></button>
+                    </div>
+                </fieldset>
+            </form>
+            <nav>
+                <a href="#"><img src="./img/social-1.png" alt="logo" /></a>
+                <a href="#"><img src="./img/social-2.png" alt="logo" /></a>
+                <a href="#"><img src="./img/social-3.png" alt="logo" /></a>
+            </nav>
+        </footer>
     </body>
 </html>

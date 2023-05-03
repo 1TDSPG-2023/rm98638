@@ -1,0 +1,12 @@
+@media (max-width: 1004px) {
+    .cabecalho{
+        flex-direction: column;
+    }
+    .cabecalho nav {
+        flex-wrap: nowrap;
+    }
+    .cabecalho a{
+        font-size: 3em;
+        padding: 5% 0;
+    }
+}
