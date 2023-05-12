@@ -1,0 +1,12 @@
+.calc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-calc, .oper-calc, .result-calc{
+    display: flex;
+    flex-wrap: wrap;
+}
+.btn-calc button, .oper-calc button, .result-calc button{
+    flex-grow: 1;
+}
