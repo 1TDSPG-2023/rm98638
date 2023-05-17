@@ -6,7 +6,6 @@
 // const btnLimpar = document.getElementById('btnLimpar')
 
 let tokenGerado = Math.random().toString(16).substring(2)
-console.log(tokenGerado)
 
 const user1 = {
     name: 'dede',
@@ -23,9 +22,9 @@ const user2 = {
 }
 const users = [user1, user2]
 addEventListener('click', (event) => {
+    const inputUser = document.querySelector('#idUser')
+    const inputPass = document.querySelector('#idPass')
     if (event.target.id == 'btnSubmit') {
-        const inputUser = document.querySelector('#idUser')
-        const inputPass = document.querySelector('#idPass')
         try {
             users.forEach((user) => {
                 if (
@@ -48,6 +47,14 @@ addEventListener('click', (event) => {
                     '<span><strong>Usuário ou senha inválidos</strong></span>'
             }
             console.log(msg)
+        }
+    } else if (event.target.className.match('fa-eye')) {
+        if (inputPass.getAttribute('type') == 'password') {
+            inputPass.setAttribute('type', 'text')
+            event.target.className = 'fa fa-eye-slash'
+        } else {
+            inputPass.setAttribute('type', 'password')
+            event.target.className = 'fa fa-eye'
         }
     }
 })

@@ -43,3 +43,7 @@ td[rowspan]{
 th{
     text-align: center;
 }
+.fa-eye, .fa-eye-slash{
+    cursor: pointer;
+    
+}
