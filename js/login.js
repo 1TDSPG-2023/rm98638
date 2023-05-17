@@ -5,20 +5,19 @@
 // const btnSubmit = document.getElementById('btnSubmit')
 // const btnLimpar = document.getElementById('btnLimpar')
 
-let tokenGerado = Math.random().toString(16).substring(2)
+const tokenGerado = () => Math.random().toString(16).substring(2)
 
 const user1 = {
     name: 'dede',
     password: '12345',
     gravarDados: true,
-    token: tokenGerado,
+    token: tokenGerado(),
 }
-tokenGerado = Math.random().toString(16).substring(2)
 const user2 = {
     name: 'gege', // cspell: disable-line
     password: '54321',
     gravarDados: true,
-    token: tokenGerado,
+    token: tokenGerado(),
 }
 const users = [user1, user2]
 addEventListener('click', (event) => {
