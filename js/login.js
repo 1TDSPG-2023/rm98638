@@ -60,7 +60,9 @@ addEventListener('click', (event) => {
                 msgError.style.color = '#00ff00'
                 msgError.innerHTML =
                     '<span><strong>Usuário validado com sucesso</strong></span>'
-                window.location.href = './sucesso.html'
+                setTimeout(function () {
+                    window.location.href = './sucesso.html'
+                }, 3000)
             } else {
                 msgError.style.color = '#ff0000'
                 msgError.innerHTML =
