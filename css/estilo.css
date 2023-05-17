@@ -45,5 +45,5 @@ th{
 }
 .fa-eye, .fa-eye-slash{
     cursor: pointer;
-    
+    user-select: none;
 }
